@@ -1,6 +1,6 @@
 # De la presentación
 
- Presentación hecha para las conferencias ignite del I Full Day PreCOREISC UNPRG 2014 http://pre.xcoreisc.com/
+ Presentación hecha para las conferencias ignite del I Full Day PreCOREISC UNPRG 2014 http://pre.xcoreisc.com/ - Título : Programa como un Pythonista
 
 # Acerca de reveal.js 
 
