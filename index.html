@@ -54,15 +54,23 @@
 				</section>
 
 				<section>
-					<h1>¿Conocen Python?<h1>
+					<img src="img/python2.png" alt="Logo Python">
+					<h1>Lenguaje de Programación</h1>
+					<h3>Creado en 1991 por Guido Van Rossum</h3><br>
+					<h5>ex Google, hoy Dropbox</h5>
+				</section>
+
+				<section>
+					<h3>La filosofía de Python hace incapie en una sintaxis muy limpia y que favorezca un codigo legible</h3>
 				</section>
 
 				<section>
 					<h1>Python y sus PEP</h1><br>
-					<h5>Propuestas de Mejora de Python (Python Enhancement Proposals o PEP's)</h5>
+					<h5>Propuestas de Mejora de Python (Python Enhancement Proposals o PEP's)</h5><br>
+					<a href="http://www.python.org/dev/peps/">http://www.python.org/dev/peps/</a>
 				</section>
 
-				<section>
+				<!--<section>
 					<h1>PEP 20</h1>
 						<p>El Zen de Python (1)</p><br>
 						<small>
@@ -83,7 +91,7 @@
 				<section>
 					<p>El Zen de Python (2)</p><br>
 						<small>
-							<ol>
+							<ol start="11">
 								
 								<li>A menos que se silencien explícitamente</li>
 								<li>Cuando te enfrentes a la ambigüedad, rechaza la tentación de adivinar.</li>
@@ -93,65 +101,192 @@
 								<li>Aunque muchas veces nunca es mejor que ahora mismo</li>
 								<li>Si la implementación es difícil de explicar, es una mala idea</li>
 								<li>Si la implementación es sencilla de explicar, puede que sea una buena idea</li>
-								<li>Los espacios de nombres son una gran idea -- ¡tengamos más de esas!</li>
+								<li>Los espacios de nombres son una gran idea  ¡tengamos más de esas!</li>
 							</ol>
 						</small>
-				</section>
+				</section> -->
 				
 				<section>
 					<h1>PEP 8</h1><br>
-					<h5>Estilo de Programación: La legibilidad cuenta</h5>
+					<h5>Estilo de Programación: La legibilidad cuenta</h5><br>
+					<h1>Las propuestas ...</h1>
 				</section>
-
-				<section>
-					<blockquote>
-						"Los programas deben escribirse para que los lean las personas, y sólo de forma circunstancial para que los ejecuten las máquinas"<br><br><br>
-						—Abelson y Sussman, Estructura e Interpretación de Programas de Computadora
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Espacios en blanco</h2><br>
-					<small>
-						<ol>								
-							<li>4 espacios por cada nivel de indentación</li>
-							<li>Una línea en blanco entre funciones</li>
-							<li>Dos líneas en blanco entre clases</li>
-						</ol>
-					</small>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
 					
-				</section>
-
-				
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="#" target="_blank">
-						<img width="320" height="299" src="#" alt="Meny">
-					</a>
+					<h1>4 espacios por cada nivel de indentación</h1>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+def saludo(sexo):
+    if sexo == 'M':
+        print "Buen día señor"
+    elif sexo == 'F':
+    	print "Buen día señora"
+    else:
+        print "Buen día"
+						</code>
+					</pre>
 				</section>
 
-				
 				<section>
-					<h1>EL FIN</h1>
-					<h3>GRACIAS</h3>
+					<h1>Una línea en blanco entre funciones</h1>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+def suma(a, b):
+	
+def resta(a, b):
+
+						</code>
+					</pre>
 				</section>
 
+				<section>
+					<h1>Dos líneas en blanco entre clases</h1>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+class Dibuja(cuadrado):
+	#Codigo
+
+
+class Pinta(red):
+	#Codigo
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Un espacio después de una coma, punto y coma, o dos puntos</h1>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+No:
+    if x == 4 : 
+    	print x , y ; x , y = y , x
+Sí:
+    if x == 4: 
+    	print x, y; x, y = y, x
+
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>Pon espacios alrededor de las asignaciones y las comparaciones (excepto en las listas de parámetros)</h3>
+					<pre>
+						<code data-trim contenteditable>
+No:
+    x= 1
+    y=2
+    z=x+y
+
+Sí:
+    x = 1
+    y = 2
+    z = x + y
+
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>No coloques espacios justo después de abrir o cerrar un paréntesis o justo antes de una lista de parámetros</h3>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+No:
+    spam( ham[ 1 ], { eggs: 2 } )
+Sí:
+    spam(ham[1], {eggs: 2})
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Cadenas de documentación = Cómo usar el código</h2><br>
+					<h3>PEP 257</h3>
+					<br>
+					<pre>
+					<code data-trim contenteditable>
+"""Retorna la cantidad de letras en un texto
+
+    Descripción.
+
+"""
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Comentarios solo si son necesarios</h1><br>
+					<h3>No se deben de realizar comentarios obvios</h3>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+x = x + 1   # Suma 1 a x
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Y si lo usas ... Por qué (razones) y cómo funciona el código</h1>
+
+				</section>							
+	
+				<section>
+					<p>minusculas_con_guiones</p> <br><br><h3>para funciones, métodos, atributos</h3>
+				<br>
+					<pre>
+						<code data-trim contenteditable>
+def esta_es_una_funcion:
+
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<p>minusculas_con_guiones </p><br><br>o<br><br><p> TODO_MAYUSCULAS </p><br><br><br><h3>para las constantes</h3>
+				</section>
+
+				<section>
+					<p>PalabrasEnMayusculas</p><br><br><h3>para las clases</h3>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+class SoyUnaClase:
+
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<p>camelCase</p><br><br><h3>sólo si es necesario adaptarse a convenciones que ya se utilizaban en el código</h3>
+					<br>
+					<blockquote>camelCase: Las palabras se separan poniendo en mayúscula la primer letra, excepto la primer letra de la primer palabra (Java)</blockquote>
+				</section>
+
+				<section>
+					<h3>Limitar los tamaños de línea a 79 caracteres como máximo</h3>
+					<br>
+					<pre>
+						<code data-trim contenteditable>
+def __init__(self, primero, segundo, tercero,
+             cuarto, quinto, sexto):
+    salida = (primero + segundo + tercero
+              + cuarto + quinto + sexto)
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>¡ Aplicen estas propuestas a su lenguaje preferido ! </h3><br>
+					<blockquote>Los programas deben escribirse para que lo lean las personas, y sólo de forma circunstancial para que los ejecuten las máquinas.
+					<br><br>—Abelson y Sussman, Estructura e Interpretación de Programas de Computadora</blockquote>
+					<br>
+					<blockquote>Programa siempre como si la persona que va dar mantenimiento a tu código fuera un psicópata violento que sabe dónde vives.
+					<br><br>– Martin Golding</blockquote>
+				</section>
 			</div>
 
 		</div>
